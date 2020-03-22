@@ -269,7 +269,7 @@ class BertSelfOutput(nn.Module):
         hidden_states = self.dense(hidden_states)
         hidden_states = self.dropout(hidden_states)
         hidden_states = self.LayerNorm(hidden_states + input_tensor)
-        print("Post Layer Norm", hidden_states.data)
+        print(hidden_states)
         return hidden_states
 
 
